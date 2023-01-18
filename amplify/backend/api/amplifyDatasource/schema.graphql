@@ -1,0 +1,13 @@
+type Car @model {
+  id: ID!
+  engine: Engine @hasOne
+  trunk: Trunk @hasOne
+}
+
+type Engine @model {
+  id: ID!
+}
+
+type Trunk @model {
+  id: ID!
+}
